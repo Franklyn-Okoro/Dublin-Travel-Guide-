@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Getting Around Dublin</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Page by: Member 4 - Ervinas Sinkevicius C24443204-->
+
+  <header>
+    <h1>Transport in Dublin</h1>
+    <p>Navigate Dublin with ease using public transport and local travel tips.</p>
+  </header>
+
+  <section>
+    <h2>Transport Options</h2>
+    <ul>
+      <li><strong>Dublin Bus:</strong> Affordable and widespread</li>
+      <li><strong>Luas:</strong> Fast tram system</li>
+      <li><strong>Taxi:</strong> Available 24/7</li>
+      <li><strong>Walking:</strong> Best for the city centre</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Fare Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Mode</th>
+          <th>Cost</th>
+          <th>Best For</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dublin Bus</td>
+          <td>€2.00–€3.00</td>
+          <td>Short to mid-range journeys</td>
+        </tr>
+        <tr>
+          <td>Luas</td>
+          <td>€2.10–€3.30</td>
+          <td>City-wide connections</td>
+        </tr>
+        <tr>
+          <td>Taxi</td>
+          <td>From €4.20 base fare</td>
+          <td>Late-night travel or direct routes</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Luas Map (Interactive)</h2>
+    <iframe 
+      src="https://www.luas.ie/maps.html" 
+      width="100%" 
+      height="400"
+      style="border:1px solid #ccc;"
+    ></iframe>
+  </section>
+
+  <section>
+    <h2>Travel Tips Audio</h2>
+    <audio controls>
+      <source src="media/audio/dublin-transport-tips.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Hover for Local Tip</h2>
+    <p onmouseover="document.getElementById('tip').style.display='block'" style="cursor: pointer;">
+      Hover here to reveal a pro tip!
+    </p>
+    <p id="tip" style="display:none; color:green;">Use a Leap Card to save on public transport fares!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dublin Travel | Ervinas Sinkevicius</p>
+  </footer>
+
+</body>
+</html>

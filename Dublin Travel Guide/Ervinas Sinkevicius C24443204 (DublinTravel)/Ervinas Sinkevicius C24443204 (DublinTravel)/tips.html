@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Tips & Culture</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    function submitTip() {
+      const name = document.getElementById('name').value;
+      const tip = document.getElementById('tipText').value;
+      if (name && tip) {
+        alert("Thanks for your tip, " + name + "!");
+      } else {
+        alert("Please fill in all fields.");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Page by: Member 4 - Your Name -->
+
+  <header>
+    <h1>Local Tips & Irish Etiquette</h1>
+    <p>Feel like a local and embrace Irish culture during your stay.</p>
+  </header>
+
+  <section>
+    <h2>Quick Travel Tips</h2>
+    <ul>
+      <li>Always say "thanks" to the bus driver!</li>
+      <li>Left-hand traffic — be careful crossing roads.</li>
+      <li>Weather changes fast — bring a light raincoat.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common Irish Slang</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Slang</th>
+          <th>Meaning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Craic</td>
+          <td>Fun or banter</td>
+        </tr>
+        <tr>
+          <td>Grand</td>
+          <td>Okay/fine/good</td>
+        </tr>
+        <tr>
+          <td>Deadly</td>
+          <td>Awesome or amazing</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Submit Your Own Travel Tip</h2>
+    <form onsubmit="submitTip(); return false;">
+      <label for="name">Your Name:</label><br/>
+      <input type="text" id="name" name="name" /><br/><br/>
+
+      <label for="tipText">Your Tip:</label><br/>
+      <textarea id="tipText" name="tipText" rows="4" cols="40"></textarea><br/><br/>
+
+      <input type="submit" value="Submit Tip" />
+    </form>
+  </section>
+<section>
+    <h2>Local Vibes</h2>
+    <img src="images/irish-pub-scene.jpg" alt="Traditional Irish pub street" width="400" />
+    <p style="font-style: italic; font-size: 0.9rem;">A typical lively evening in Dublin's Temple Bar area</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Craic & Compass | Member 4</p>
+  </footer>
+
+</body>
+</html>
